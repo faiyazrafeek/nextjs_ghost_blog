@@ -52,7 +52,7 @@ const Post: React.FC<{post: Post}> = (props) => {
         setEnableLoadComments(false)
         //going to load discuss
         ;(window as any).disqus_config = function () {
-            this.page.url = window.location.href; 
+            this.page.url = BLOG_URL; 
             this.page.identifier = post.slug; 
         }
 
