@@ -23,7 +23,7 @@ export const getStaticProps = async ({ params }) => {
       }
 }
 
-export const getStaticPaths = () => {
+export const getStaticPaths = async () => {
     return {
         paths: [],
         fallback: true
